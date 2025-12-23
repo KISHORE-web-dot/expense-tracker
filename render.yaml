@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: expense-tracker-backend
+    env: node
+    rootDirectory: backend-node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: FIREBASE_CREDENTIALS
+        sync: false
